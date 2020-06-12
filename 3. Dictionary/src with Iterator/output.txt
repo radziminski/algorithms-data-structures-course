@@ -1,0 +1,177 @@
+==== Dictionary class Tests: ====
+
+Dictionary d1 after adding int keys from -1 to 11:
+
+                                    11(111)
+
+                        10(10)
+
+            9(99)
+
+                                    8(88)
+
+                        7(77)
+
+                                    6(66)
+
+5(55)
+
+                                    4(44)
+
+                        3(33)
+
+                                    2(22)
+
+            1(11)
+
+                        0(0)
+
+                                    -1(-11)
+
+Nodes By different traversals:
+Printing Tree Nodes by Inorder Traversal: 
+Key: -1    	Info: -11
+Key: 0    	Info: 0
+Key: 1    	Info: 11
+Key: 2    	Info: 22
+Key: 3    	Info: 33
+Key: 4    	Info: 44
+Key: 5    	Info: 55
+Key: 6    	Info: 66
+Key: 7    	Info: 77
+Key: 8    	Info: 88
+Key: 9    	Info: 99
+Key: 10    	Info: 10
+Key: 11    	Info: 111
+
+Printing Tree Nodes by Postorder Traversal: 
+Key: -1    	Info: -11
+Key: 0    	Info: 0
+Key: 2    	Info: 22
+Key: 4    	Info: 44
+Key: 3    	Info: 33
+Key: 1    	Info: 11
+Key: 6    	Info: 66
+Key: 8    	Info: 88
+Key: 7    	Info: 77
+Key: 11    	Info: 111
+Key: 10    	Info: 10
+Key: 9    	Info: 99
+Key: 5    	Info: 55
+
+Printing Tree Nodes by Preorder Traversal: 
+Key: 5    	Info: 55
+Key: 1    	Info: 11
+Key: 0    	Info: 0
+Key: -1    	Info: -11
+Key: 3    	Info: 33
+Key: 2    	Info: 22
+Key: 4    	Info: 44
+Key: 9    	Info: 99
+Key: 7    	Info: 77
+Key: 6    	Info: 66
+Key: 8    	Info: 88
+Key: 10    	Info: 10
+Key: 11    	Info: 111
+
+Dictionary d1 after removing keys from 7 to 11:
+
+                        6(66)
+
+            5(55)
+
+                        4(44)
+
+3(33)
+
+                        2(22)
+
+            1(11)
+
+                        0(0)
+
+                                    -1(-11)
+
+Dictionary d2=d1 (before removal od keys 7 to 11): (Testing assignment operator)
+
+                                    11(111)
+
+                        10(10)
+
+            9(99)
+
+                                    8(88)
+
+                        7(77)
+
+                                    6(66)
+
+5(55)
+
+                                    4(44)
+
+                        3(33)
+
+                                    2(22)
+
+            1(11)
+
+                        0(0)
+
+                                    -1(-11)
+
+Dictionary d3(d1) (after removal): (Testing copy constructor)
+
+                        6(66)
+
+            5(55)
+
+                        4(44)
+
+3(33)
+
+                        2(22)
+
+            1(11)
+
+                        0(0)
+
+                                    -1(-11)
+
+Dictionary d4=d3+d2: (Testing + and += operator)
+
+                                                11(111)
+
+                                    10(10)
+
+                        9(99)
+
+                                    8(88)
+
+            7(77)
+
+                                    6(66)
+
+                        5(55)
+
+                                    4(44)
+
+3(33)
+
+                        2(22)
+
+            1(11)
+
+                        0(0)
+
+                                    -1(-11)
+
+Dictionary d4 after Clear() function:
+Tree is Empty.
+
+Dictionary d3 tree height: 3
+Node of key 5 and 18 height of Dictionary d3 (second should be -1 cuz it doesnt exist):1	-1
+Does nodes 3 and 100 exists in tree d3 (shold be 1 and 0): 1	0
+Info of Nodes 1 and 5 of d3:11	55
+
+Testing iterator on d3: going right left and printing key and info: 4	44
